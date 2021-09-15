@@ -8,14 +8,14 @@ local Frame = Instance.new("Frame")
 local Frame_2 = Instance.new("Frame")
 local NAME = Instance.new("TextLabel")
 local ScrollingFrame = Instance.new("ScrollingFrame")
-local TextLabel = Instance.new("TextLabel")
+local TextLabel1 = Instance.new("TextLabel")
 local TextLabel2 = Instance.new("TextLabel")
 local TextLabel3 = Instance.new("TextLabel")
 local Farm = Instance.new("TextButton")
 local UICorner = Instance.new("UICorner")
 local Buy = Instance.new("TextButton")
 local UICorner_2 = Instance.new("UICorner")
-local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel = Instance.new("TextLabel")
 local Fly = Instance.new("TextButton")
 local UICorner_3 = Instance.new("UICorner")
 local Fill = Instance.new("Frame")
@@ -32,13 +32,15 @@ local UICorner_8 = Instance.new("UICorner")
 local UICorner_9 = Instance.new("UICorner")
 local TP = Instance.new("TextButton")
 local UICorner_10 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
 local TextLabel_3 = Instance.new("TextLabel")
-local TextLabel_4 = Instance.new("TextLabel")
 
 --Properties:
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.DisplayOrder = 5
+ScreenGui.ResetOnSpawn = false
 
 Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -48,6 +50,8 @@ Frame.Size = UDim2.new(0, 328, 0, 249)
 Frame_2.Parent = Frame
 Frame_2.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
 Frame_2.Size = UDim2.new(0, 328, 0, 23)
+Frame_2.Selectable = true
+Frame_2.Draggable = true
 
 NAME.Name = "NAME"
 NAME.Parent = Frame_2
@@ -68,15 +72,16 @@ ScrollingFrame.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
 ScrollingFrame.Position = UDim2.new(0, 0, 0.0923694745, 0)
 ScrollingFrame.Size = UDim2.new(0, 328, 0, 226)
 
-TextLabel.Parent = ScrollingFrame
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.Position = UDim2.new(0.0701219514, 0, 0.0198993273, 0)
-TextLabel.Size = UDim2.new(0, 80, 0, 8)
-TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = "Walkspeed:"
-TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.TextSize = 14.000
+TextLabel1.Name = "TextLabel1"
+TextLabel1.Parent = ScrollingFrame
+TextLabel1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel1.BackgroundTransparency = 1.000
+TextLabel1.Position = UDim2.new(0.0701219514, 0, 0.0198993273, 0)
+TextLabel1.Size = UDim2.new(0, 80, 0, 8)
+TextLabel1.Font = Enum.Font.SourceSans
+TextLabel1.Text = "Walkspeed:"
+TextLabel1.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel1.TextSize = 14.000
 
 TextLabel2.Name = "TextLabel2"
 TextLabel2.Parent = ScrollingFrame
@@ -124,17 +129,17 @@ Buy.TextSize = 14.000
 
 UICorner_2.Parent = Buy
 
-TextLabel_2.Parent = ScrollingFrame
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.BackgroundTransparency = 1.000
-TextLabel_2.Position = UDim2.new(0.170731723, 0, 0.913654685, 0)
-TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
-TextLabel_2.Font = Enum.Font.SourceSans
-TextLabel_2.Text = "Executor: Synapse X"
-TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.TextScaled = true
-TextLabel_2.TextSize = 14.000
-TextLabel_2.TextWrapped = true
+TextLabel.Parent = ScrollingFrame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.170731723, 0, 0.913654685, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Executor: Synapse X"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
 
 Fly.Name = "Fly"
 Fly.Parent = ScrollingFrame
@@ -232,33 +237,33 @@ TP.TextSize = 14.000
 
 UICorner_10.Parent = TP
 
+TextLabel_2.Parent = ScrollingFrame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.170731723, 0, 0.540160716, 0)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Gui: Jock Strap"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
 TextLabel_3.Parent = ScrollingFrame
 TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_3.BackgroundTransparency = 1.000
-TextLabel_3.Position = UDim2.new(0.170731723, 0, 0.540160716, 0)
+TextLabel_3.Position = UDim2.new(0.167682946, 0, 0.622490048, 0)
 TextLabel_3.Size = UDim2.new(0, 200, 0, 50)
 TextLabel_3.Font = Enum.Font.SourceSans
-TextLabel_3.Text = "Gui: Jock Strap"
+TextLabel_3.Text = "Scripts: Jock Strap"
 TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_3.TextScaled = true
 TextLabel_3.TextSize = 14.000
 TextLabel_3.TextWrapped = true
 
-TextLabel_4.Parent = ScrollingFrame
-TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_4.BackgroundTransparency = 1.000
-TextLabel_4.Position = UDim2.new(0.167682946, 0, 0.622490048, 0)
-TextLabel_4.Size = UDim2.new(0, 200, 0, 50)
-TextLabel_4.Font = Enum.Font.SourceSans
-TextLabel_4.Text = "Scripts: Jock Strap"
-TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_4.TextScaled = true
-TextLabel_4.TextSize = 14.000
-TextLabel_4.TextWrapped = true
-
 -- Scripts:
 
-local function YLZYIC_fake_script() -- Fill.LocalScript 
+local function PJJR_fake_script() -- Fill.LocalScript 
 	local script = Instance.new('LocalScript', Fill)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -274,7 +279,7 @@ local function YLZYIC_fake_script() -- Fill.LocalScript
 			local Precent = math.clamp(RelPos.X/script.Parent.AbsoluteSize.X,0,1)
 			script.Parent.TextButton.Position = UDim2.new(Precent,0,0.5,0)
 			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Precent*200
-			script.Parent.Parent.TextLabel2.Text = game.Players.LocalPlayer.Character.Humanoid.WalkSpeed
+			script.Parent.Parent.TextLabel1.Text = game.Players.LocalPlayer.Character.Humanoid.WalkSpeed
 		end
 	end)
 	
@@ -284,8 +289,8 @@ local function YLZYIC_fake_script() -- Fill.LocalScript
 		end
 	end)
 end
-coroutine.wrap(YLZYIC_fake_script)()
-local function HFWTDOE_fake_script() -- Fill_2.LocalScript 
+coroutine.wrap(PJJR_fake_script)()
+local function URNRK_fake_script() -- Fill_2.LocalScript 
 	local script = Instance.new('LocalScript', Fill_2)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -301,7 +306,7 @@ local function HFWTDOE_fake_script() -- Fill_2.LocalScript
 			local Precent = math.clamp(RelPos.X/script.Parent.AbsoluteSize.X,0,1)
 			script.Parent.TextButton.Position = UDim2.new(Precent,0,0.5,0)
 			game.Players.LocalPlayer.Character.Humanoid.JumpPower = Precent*430
-			script.Parent.Parent.TextLabel.Text = game.Players.LocalPlayer.Character.Humanoid.JumpPower
+			script.Parent.Parent.TextLabel2.Text = game.Players.LocalPlayer.Character.Humanoid.JumpPower
 		end
 	end)
 	
@@ -311,8 +316,8 @@ local function HFWTDOE_fake_script() -- Fill_2.LocalScript
 		end
 	end)
 end
-coroutine.wrap(HFWTDOE_fake_script)()
-local function WIGPPDX_fake_script() -- Fill_3.LocalScript 
+coroutine.wrap(URNRK_fake_script)()
+local function ZGPNKGT_fake_script() -- Fill_3.LocalScript 
 	local script = Instance.new('LocalScript', Fill_3)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -339,27 +344,27 @@ local function WIGPPDX_fake_script() -- Fill_3.LocalScript
 		end
 	end)
 end
-coroutine.wrap(WIGPPDX_fake_script)()
-local function NHZUX_fake_script() -- Frame.LocalScript 
+coroutine.wrap(ZGPNKGT_fake_script)()
+local function VYQY_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	while true do
 		
 		script.Parent.Frame.NAME.TextColor3 = Color3.fromRGB(255, 0, 0)
-		wait(1.4)
+		wait(0.4)
 		script.Parent.Frame.NAME.TextColor3 = Color3.fromRGB(255, 170, 0)
-		wait(1.4)
+		wait(0.4)
 		script.Parent.Frame.NAME.TextColor3 = Color3.fromRGB(255, 255, 0)
-		wait(1.4)
+		wait(0.4)
 		script.Parent.Frame.NAME.TextColor3 = Color3.fromRGB(85, 170, 0)
-		wait(1.4)
+		wait(0.4)
 		script.Parent.Frame.NAME.TextColor3 = Color3.fromRGB(0, 170, 255)
-		wait(1.4)
+		wait(0.4)
 		script.Parent.Frame.NAME.TextColor3 = Color3.fromRGB(0, 85, 255)
-		wait(1.4)
+		wait(0.4)
 		script.Parent.Frame.NAME.TextColor3 = Color3.fromRGB(170, 0, 255)
-		wait(1.4)
+		wait(0.4)
 	end
 	
 end
-coroutine.wrap(NHZUX_fake_script)()
+coroutine.wrap(VYQY_fake_script)()
