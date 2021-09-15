@@ -1,0 +1,365 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Frame_2 = Instance.new("Frame")
+local NAME = Instance.new("TextLabel")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel2 = Instance.new("TextLabel")
+local TextLabel3 = Instance.new("TextLabel")
+local Farm = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local Buy = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local Fly = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local Fill = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local UICorner_5 = Instance.new("UICorner")
+local Fill_2 = Instance.new("Frame")
+local TextButton_2 = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local UICorner_7 = Instance.new("UICorner")
+local Fill_3 = Instance.new("Frame")
+local TextButton_3 = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local UICorner_9 = Instance.new("UICorner")
+local TP = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.Position = UDim2.new(0.0387096778, 0, 0.168880463, 0)
+Frame.Size = UDim2.new(0, 328, 0, 249)
+
+Frame_2.Parent = Frame
+Frame_2.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+Frame_2.Size = UDim2.new(0, 328, 0, 23)
+
+NAME.Name = "NAME"
+NAME.Parent = Frame_2
+NAME.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NAME.BackgroundTransparency = 1.000
+NAME.Position = UDim2.new(0.0182926822, 0, 0, 0)
+NAME.Size = UDim2.new(0, 234, 0, 23)
+NAME.Font = Enum.Font.SourceSans
+NAME.Text = "Wine Hub V 3.0.2- Anime Fighting Simulator "
+NAME.TextColor3 = Color3.fromRGB(255, 255, 255)
+NAME.TextSize = 14.000
+NAME.TextWrapped = true
+NAME.TextXAlignment = Enum.TextXAlignment.Left
+
+ScrollingFrame.Parent = Frame
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+ScrollingFrame.Position = UDim2.new(0, 0, 0.0923694745, 0)
+ScrollingFrame.Size = UDim2.new(0, 328, 0, 226)
+
+TextLabel.Parent = ScrollingFrame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.0701219514, 0, 0.0198993273, 0)
+TextLabel.Size = UDim2.new(0, 80, 0, 8)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Walkspeed:"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 14.000
+
+TextLabel2.Name = "TextLabel2"
+TextLabel2.Parent = ScrollingFrame
+TextLabel2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel2.BackgroundTransparency = 1.000
+TextLabel2.Position = UDim2.new(0.378048778, 0, 0.0194906108, 0)
+TextLabel2.Size = UDim2.new(0, 62, 0, 9)
+TextLabel2.Font = Enum.Font.SourceSans
+TextLabel2.Text = "Jumppower: "
+TextLabel2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel2.TextSize = 14.000
+
+TextLabel3.Name = "TextLabel3"
+TextLabel3.Parent = ScrollingFrame
+TextLabel3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel3.BackgroundTransparency = 1.000
+TextLabel3.Position = UDim2.new(0.628048837, 0, 0.0181433689, 0)
+TextLabel3.Size = UDim2.new(0, 72, 0, 9)
+TextLabel3.Font = Enum.Font.SourceSans
+TextLabel3.Text = "Gravity:"
+TextLabel3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel3.TextSize = 14.000
+
+Farm.Name = "Farm"
+Farm.Parent = ScrollingFrame
+Farm.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+Farm.Position = UDim2.new(0.0731706843, 0, 0.166453421, 0)
+Farm.Size = UDim2.new(0, 252, 0, 37)
+Farm.Font = Enum.Font.SourceSans
+Farm.Text = "Auto Farm"
+Farm.TextColor3 = Color3.fromRGB(255, 255, 255)
+Farm.TextSize = 14.000
+
+UICorner.Parent = Farm
+
+Buy.Name = "Buy"
+Buy.Parent = ScrollingFrame
+Buy.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+Buy.Position = UDim2.new(0.0731706843, 0, 0.266855031, 0)
+Buy.Size = UDim2.new(0, 252, 0, 37)
+Buy.Font = Enum.Font.SourceSans
+Buy.Text = "Auto Buy"
+Buy.TextColor3 = Color3.fromRGB(255, 255, 255)
+Buy.TextSize = 14.000
+
+UICorner_2.Parent = Buy
+
+TextLabel_2.Parent = ScrollingFrame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.170731723, 0, 0.913654685, 0)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Executor: Synapse X"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+Fly.Name = "Fly"
+Fly.Parent = ScrollingFrame
+Fly.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+Fly.Position = UDim2.new(0.0731706843, 0, 0.369264662, 0)
+Fly.Size = UDim2.new(0, 252, 0, 37)
+Fly.Font = Enum.Font.SourceSans
+Fly.Text = "Fly {X}"
+Fly.TextColor3 = Color3.fromRGB(255, 255, 255)
+Fly.TextSize = 14.000
+
+UICorner_3.Parent = Fly
+
+Fill.Name = "Fill"
+Fill.Parent = ScrollingFrame
+Fill.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+Fill.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Fill.BorderSizePixel = 0
+Fill.Position = UDim2.new(0.102165781, 0, 0.0600503981, 0)
+Fill.Size = UDim2.new(0, 58, 0, 9)
+
+TextButton.Parent = Fill
+TextButton.AnchorPoint = Vector2.new(0.5, 0.5)
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.0599074513, 0, 0.401475728, 0)
+TextButton.Size = UDim2.new(0, 8, 0, 8)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = ""
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+
+UICorner_4.Parent = TextButton
+
+UICorner_5.Parent = Fill
+
+Fill_2.Name = "Fill"
+Fill_2.Parent = ScrollingFrame
+Fill_2.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+Fill_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Fill_2.BorderSizePixel = 0
+Fill_2.Position = UDim2.new(0.388751149, 0, 0.0600503981, 0)
+Fill_2.Size = UDim2.new(0, 58, 0, 9)
+
+TextButton_2.Parent = Fill_2
+TextButton_2.AnchorPoint = Vector2.new(0.5, 0.5)
+TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.BorderSizePixel = 0
+TextButton_2.Position = UDim2.new(0.0599074513, 0, 0.401475728, 0)
+TextButton_2.Size = UDim2.new(0, 8, 0, 8)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = ""
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.TextSize = 14.000
+
+UICorner_6.Parent = TextButton_2
+
+UICorner_7.Parent = Fill_2
+
+Fill_3.Name = "Fill"
+Fill_3.Parent = ScrollingFrame
+Fill_3.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+Fill_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Fill_3.BorderSizePixel = 0
+Fill_3.Position = UDim2.new(0.647897482, 0, 0.0600503981, 0)
+Fill_3.Size = UDim2.new(0, 58, 0, 9)
+
+TextButton_3.Parent = Fill_3
+TextButton_3.AnchorPoint = Vector2.new(0.5, 0.5)
+TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.BorderSizePixel = 0
+TextButton_3.Position = UDim2.new(0.0599074513, 0, 0.401475728, 0)
+TextButton_3.Size = UDim2.new(0, 8, 0, 8)
+TextButton_3.Font = Enum.Font.SourceSans
+TextButton_3.Text = ""
+TextButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.TextSize = 14.000
+
+UICorner_8.Parent = TextButton_3
+
+UICorner_9.Parent = Fill_3
+
+TP.Name = "TP"
+TP.Parent = ScrollingFrame
+TP.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+TP.Position = UDim2.new(0.0731706843, 0, 0.467658222, 0)
+TP.Size = UDim2.new(0, 252, 0, 37)
+TP.Font = Enum.Font.SourceSans
+TP.Text = "Ctrl +Click TP"
+TP.TextColor3 = Color3.fromRGB(255, 255, 255)
+TP.TextSize = 14.000
+
+UICorner_10.Parent = TP
+
+TextLabel_3.Parent = ScrollingFrame
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.170731723, 0, 0.540160716, 0)
+TextLabel_3.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "Gui: Jock Strap"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+TextLabel_4.Parent = ScrollingFrame
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(0.167682946, 0, 0.622490048, 0)
+TextLabel_4.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = "Scripts: Jock Strap"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+-- Scripts:
+
+local function YLZYIC_fake_script() -- Fill.LocalScript 
+	local script = Instance.new('LocalScript', Fill)
+
+	local UserInputService = game:GetService("UserInputService")
+	local Dragging = false
+	script.Parent.TextButton.MouseButton1Down:Connect(function()
+		Dragging = true
+	end)
+	
+	UserInputService.InputChanged:Connect(function()
+		if Dragging then
+			local MousePos = UserInputService:GetMouseLocation()+Vector2.new(0,36)
+			local RelPos = MousePos-script.Parent.AbsolutePosition
+			local Precent = math.clamp(RelPos.X/script.Parent.AbsoluteSize.X,0,1)
+			script.Parent.TextButton.Position = UDim2.new(Precent,0,0.5,0)
+			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Precent*200
+			script.Parent.Parent.TextLabel2.Text = game.Players.LocalPlayer.Character.Humanoid.WalkSpeed
+		end
+	end)
+	
+	UserInputService.InputEnded:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			Dragging = false
+		end
+	end)
+end
+coroutine.wrap(YLZYIC_fake_script)()
+local function HFWTDOE_fake_script() -- Fill_2.LocalScript 
+	local script = Instance.new('LocalScript', Fill_2)
+
+	local UserInputService = game:GetService("UserInputService")
+	local Dragging = false
+	script.Parent.TextButton.MouseButton1Down:Connect(function()
+		Dragging = true
+	end)
+	
+	UserInputService.InputChanged:Connect(function()
+		if Dragging then
+			local MousePos = UserInputService:GetMouseLocation()+Vector2.new(0,36)
+			local RelPos = MousePos-script.Parent.AbsolutePosition
+			local Precent = math.clamp(RelPos.X/script.Parent.AbsoluteSize.X,0,1)
+			script.Parent.TextButton.Position = UDim2.new(Precent,0,0.5,0)
+			game.Players.LocalPlayer.Character.Humanoid.JumpPower = Precent*430
+			script.Parent.Parent.TextLabel.Text = game.Players.LocalPlayer.Character.Humanoid.JumpPower
+		end
+	end)
+	
+	UserInputService.InputEnded:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			Dragging = false
+		end
+	end)
+end
+coroutine.wrap(HFWTDOE_fake_script)()
+local function WIGPPDX_fake_script() -- Fill_3.LocalScript 
+	local script = Instance.new('LocalScript', Fill_3)
+
+	local UserInputService = game:GetService("UserInputService")
+	local Dragging = false
+	script.Parent.TextButton.MouseButton1Down:Connect(function()
+		Dragging = true
+	end)
+	
+	UserInputService.InputChanged:Connect(function()
+		if Dragging then
+			local MousePos = UserInputService:GetMouseLocation()+Vector2.new(0,36)
+			local RelPos = MousePos-script.Parent.AbsolutePosition
+			local Precent = math.clamp(RelPos.X/script.Parent.AbsoluteSize.X,0,1)
+			script.Parent.TextButton.Position = UDim2.new(Precent,0,0.5,0)
+			game.Workspace.Gravity = Precent*300
+			
+			script.Parent.Parent.TextLabel3.Text = game.Workspace.Gravity
+		end
+	end)
+	
+	UserInputService.InputEnded:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			Dragging = false
+		end
+	end)
+end
+coroutine.wrap(WIGPPDX_fake_script)()
+local function NHZUX_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	while true do
+		
+		script.Parent.Frame.NAME.TextColor3 = Color3.fromRGB(255, 0, 0)
+		wait(1.4)
+		script.Parent.Frame.NAME.TextColor3 = Color3.fromRGB(255, 170, 0)
+		wait(1.4)
+		script.Parent.Frame.NAME.TextColor3 = Color3.fromRGB(255, 255, 0)
+		wait(1.4)
+		script.Parent.Frame.NAME.TextColor3 = Color3.fromRGB(85, 170, 0)
+		wait(1.4)
+		script.Parent.Frame.NAME.TextColor3 = Color3.fromRGB(0, 170, 255)
+		wait(1.4)
+		script.Parent.Frame.NAME.TextColor3 = Color3.fromRGB(0, 85, 255)
+		wait(1.4)
+		script.Parent.Frame.NAME.TextColor3 = Color3.fromRGB(170, 0, 255)
+		wait(1.4)
+	end
+	
+end
+coroutine.wrap(NHZUX_fake_script)()
